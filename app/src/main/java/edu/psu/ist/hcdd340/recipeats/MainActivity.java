@@ -81,6 +81,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        ShapeableImageView button = findViewById(R.id.imageLike);
+        button.setOnClickListener(this);
+
+        button = findViewById(R.id.imageSearch);
+        button.setOnClickListener(this);
+
+        button = findViewById(R.id.imageSettings);
+        button.setOnClickListener(this);
 
         setSupportActionBar(binding.toolbar);
 
