@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">RecipEats</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="settings_description">Settings</string>
+    <string name="search_description">Search</string>
+    <string name="recipe_taskbar_label">Recipe</string>
+    <string name="saved_taskbar_label">Saved</string>
+    <string name="settings_taskbar_label">Settings</string>
+
+
+    <string name="mission_penn_state"><b><big>Mission and Values</big></b>
+\n
+\n
+The Pennsylvania State University is a multi-campus, land-grant, public research university that educates students from around the world and supports individuals and communities through integrated programs of teaching, research, and service.
+\n
+\n
+Our instructional mission includes <a href="https://admissions.psu.edu/">undergraduate</a>, <a href="https://gradschool.psu.edu/prospective-students/">graduate</a>, professional, continuing, and <a href="https://extension.psu.edu/">extension</a> education offered through both resident instruction and distance learning. Our educational programs are enriched by the talent, knowledge, diversity, creativity, and teaching and research acumen of our faculty, students, and staff.
+\n
+\n
+Our discovery-oriented, collaborative, and interdisciplinary research and scholarship promote human and economic development, global understanding, and advancement in professional practice through the expansion of knowledge and its applications in the natural and applied sciences, social and behavioral sciences, engineering, technology, arts and humanities, and myriad professions.
+\n
+\n
+As Pennsylvania\'s land-grant university, we provide unparalleled access to education and public service to support the citizens of the Commonwealth and beyond. We engage in collaborative activities with private sector, educational, and governmental partners worldwide to generate, integrate, apply, and disseminate knowledge that is valuable to society.
+    </string>
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+
+
+
+
+    <string name="tree_name">HoslerOak</string>
+    <string name="tree_id">#7863</string>
+    <string name="tree_location">Arboretum</string>
+    <string name="logo_description">App Logo</string>
+
+    <string name="current_profile_label">Current Profile</string>
+    <string name="app_settings_label">App Settings</string>
+    <string name="settings_tree_name_label">Name:</string>
+    <string name="settings_checkbox_theme">Change App Theme</string>
+    <string name="settings_checkbox_clear_preference">Clear Profile Preferences</string>
+    <string name="tree_id_label">ID:</string>
+    <string name="tree_location_label">Location:</string>
+    <string name="shared_pref_assignment_3">edu.psu.ist.hcdd340.treender.assignment_3</string>
+
+
+
+
+
+
+
+</resources>
