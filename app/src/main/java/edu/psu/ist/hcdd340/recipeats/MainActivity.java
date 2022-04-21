@@ -22,7 +22,7 @@ import edu.psu.ist.hcdd340.recipeats.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
+import com.google.android.material.imageview.ShapeableImageView;
 
 
 final class RecipeProfile {
