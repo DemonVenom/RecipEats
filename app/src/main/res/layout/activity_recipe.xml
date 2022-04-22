@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/coordinatorLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="419dp"
+        android:layout_height="62dp"
+        android:background="@color/primaryColor"
+        app:layout_anchorGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/Theme.RecipEats.PopupOverlay"
+        tools:ignore="MissingConstraints"
+        tools:layout_conversion_absoluteHeight="56dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ScrollView
+        android:layout_width="366dp"
+        android:layout_height="668dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/ingredients_high_protein_fruit_salad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/tree_image"
+                android:layout_width="222dp"
+                android:layout_height="189dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textIngredients" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/tree_image2"
+                android:layout_width="222dp"
+                android:layout_height="189dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tree_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/taskbar_background_shadow"
+        android:layout_width="364dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedShape"
+        app:srcCompat="@color/primaryColor" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/taskbar_background"
+        android:layout_width="414dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedShape"
+        app:srcCompat="@color/light_gray" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSearch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/dark_gray"
+        android:contentDescription="@string/search_description"
+        app:contentPadding="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskbar_background"
+        app:layout_constraintVertical_bias="0.212"
+        app:shapeAppearanceOverlay="@style/circleShape"
+        app:srcCompat="@drawable/ic_baseline_menu_book_24"
+        tools:layout_conversion_absoluteHeight="200dp"
+        tools:layout_conversion_absoluteWidth="200dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSettings"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/light_gray"
+        android:contentDescription="@string/settings_description"
+        app:contentPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskbar_background"
+        app:layout_constraintVertical_bias="0.2"
+        app:shapeAppearanceOverlay="@style/circleShape"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        tools:layout_conversion_absoluteHeight="200dp"
+        tools:layout_conversion_absoluteWidth="200dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageLike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/light_gray"
+        android:contentDescription="@string/settings_description"
+        app:contentPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskbar_background"
+        app:layout_constraintVertical_bias="0.2"
+        app:shapeAppearanceOverlay="@style/circleShape"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_alt_24"
+        tools:layout_conversion_absoluteHeight="200dp"
+        tools:layout_conversion_absoluteWidth="200dp" />
+
+    <TextView
+        android:id="@+id/recipe_taskbar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recipe_taskbar_label"
+        app:layout_constraintEnd_toEndOf="@+id/imageSearch"
+        app:layout_constraintStart_toStartOf="@+id/imageSearch"
+        app:layout_constraintTop_toBottomOf="@+id/imageSearch" />
+
+    <TextView
+        android:id="@+id/saved_taskbar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_taskbar_label"
+        app:layout_constraintEnd_toEndOf="@+id/imageLike"
+        app:layout_constraintStart_toStartOf="@+id/imageLike"
+        app:layout_constraintTop_toBottomOf="@+id/imageLike" />
+
+    <TextView
+        android:id="@+id/settings_taskbar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_taskbar_label"
+        app:layout_constraintEnd_toEndOf="@+id/imageSettings"
+        app:layout_constraintStart_toStartOf="@+id/imageSettings"
+        app:layout_constraintTop_toBottomOf="@+id/imageSettings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
